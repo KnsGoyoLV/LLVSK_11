@@ -8,7 +8,7 @@
 # Pieprasām lietotāja vārdu un vecumu
 name = input("Kāds ir tavs vārds? ")
 age = int(input("Cik tev gadu? "))
-
+# Kaut ko izdarijam te
 # Izvadām vārdu un vecumu
 print(f"Tevi sauc {name}, un tev ir {age} gadi.")
 
