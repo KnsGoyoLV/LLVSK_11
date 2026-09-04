@@ -1,29 +1,14 @@
-#   Atrodi kļūdas kodā un izlabo tās
-#         un optimizē kodu
-#
-#   Programma paprasa cilvēka vardu un cik gadi
-#           un pārbauda vai ir pieaudzis
-#
-#
-# Pieprasām lietotāja vārdu un vecumu
-name = input("Kāds ir tavs vārds? ")
-age = int(input("Cik tev gadu? "))
-# Kaut ko izdarijam te
-# Izvadām vārdu un vecumu
-print(f"Tevi sauc {name}, un tev ir {age} gadi.")
+import platform
+import sys
 
-if age >= 18:
-    print("Tu esi pieaudzis!")
+
+print("Python version testing script")
+print(f"Python: {platform.python_version()}")
+print(f"Implementation: {platform.python_implementation()}")
+print(f"Platform: {platform.platform()}")
+
+name = input("What is your name? ").strip()
+if name:
+	print(f"Hello, {name}!")
 else:
-    print("Tu neesi pieaudzis!")
-
-# Veicam nelielu matemātiku - aprēķinām dzimšanas gadu
-current_year = 2024
-birth_year = current_year - age
-
-# Izvadām aprēķināto dzimšanas gadu
-print(f"Tavs dzimšanas gads ir aptuveni {birth_year}.")
-
-
-
-
+	print("Hello, stranger!")
